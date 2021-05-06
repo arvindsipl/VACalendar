@@ -107,7 +107,6 @@ public class VAWeekDaysView: UIView {
             } else {
                 label.textColor = appearance.weekDayTextColor
             }
-            label.textColor = appearance.weekDayTextColor
             dayLabels.append(label)
             addSubview(label)
         }
