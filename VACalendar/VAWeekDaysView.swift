@@ -102,7 +102,11 @@ public class VAWeekDaysView: UIView {
             let label = UILabel()
             label.text = name
             label.textAlignment = .center
-            label.font = appearance.weekDayTextFont
+            if name == "Sun" || name == "Sat" {
+                label.textColor = .red
+            } else {
+                label.textColor = appearance.weekDayTextColor
+            }
             label.textColor = appearance.weekDayTextColor
             dayLabels.append(label)
             addSubview(label)

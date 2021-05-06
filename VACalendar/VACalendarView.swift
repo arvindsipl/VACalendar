@@ -44,11 +44,11 @@ public class VACalendarView: UIScrollView {
     public var showDaysOut = true
     public var selectionStyle: VASelectionStyle = .single
     
-    private var calculatedWeekHeight: CGFloat = 100
+    private var calculatedWeekHeight: CGFloat = 0
     private let calendar: VACalendar
     private var monthViews = [VAMonthView]()
     private let maxNumberOfWeek = 6
-    private let numberDaysInWeek = 7
+    private let numberDaysInWeek = 10
     private var weekHeight: CGFloat {
         switch scrollDirection {
         case .horizontal:
